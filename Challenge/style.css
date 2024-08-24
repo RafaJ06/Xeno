@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+:root{
+    --main-font-family: "Times New Roman", sans-serif;
+    border: none;
+    background-color: #EEF7FF;    
+    
+}
+/*
+body{
+    background-color: #EEF7FF;
+    font-family: var(--main-font-family);
+    margin: 0;
+    padding: 0;
+ 
+}
+
+#input-One{
+    
+    height: 48px;
+    margin: 163px 0px 0px 238px;
+    background-color: #EEF7FF;
+    border: none;
+    font-family: var(--main-font-family);
+    font-size: 32px;
+    width: 577px;
+
+}
+
+.mostrar-Texto{
+    position: absolute;
+    display: flex;
+    f
+  margin: 10px ;
+    background-color: #CDE8E5;
+    
+   
+    height: 944px;
+    border-radius: 32px;
+    text-align: center;
+    width: 400px;
+}
+
+img{
+    margin: 50px;
+    height: 50%;
+    width: 50%;
+}
+
