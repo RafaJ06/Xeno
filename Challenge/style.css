@@ -1,50 +1,228 @@
 
-@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
-
-:root{
-    --main-font-family: "Times New Roman", sans-serif;
-    border: none;
-    background-color: #EEF7FF;    
-    
-}
-/*
-body{
-    background-color: #EEF7FF;
-    font-family: var(--main-font-family);
+*{
     margin: 0;
     padding: 0;
- 
 }
 
-#input-One{
-    
-    height: 48px;
-    margin: 163px 0px 0px 238px;
-    background-color: #EEF7FF;
-    border: none;
-    font-family: var(--main-font-family);
-    font-size: 32px;
-    width: 577px;
-
+.div-main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f5fc;
 }
 
-.mostrar-Texto{
+.texto{
     position: absolute;
-    display: flex;
-    f
-  margin: 10px ;
-    background-color: #CDE8E5;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top:15%;
+    border:none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+line-height: 150%;
+background-color: #f3f5fc;
+}
+
+.texto::placeholder
+{
+    color: #0a3871;
     
-   
-    height: 944px;
-    border-radius: 32px;
+}
+
+.texto:focus, 
+.texto:active{
+border: none;
+outline: none;
+}
+
+.ojo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+
+}
+.ojo p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #ff0000;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 83%;
+}
+
+.btn-encriptador{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2%;
+   gap: 8px;
+   width: 25%;
+   background-color: #405cc1;
+   border-radius: 24px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 18px;
+   line-height: 19px;
+   text-align: center;
+   color: #ffffff;
+}
+
+.btn-desencriptador{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #405cc1;
+    border: 1px solid #ff0000;
+    border-radius: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
     text-align: center;
-    width: 400px;
+    color: aqua;
 }
 
-img{
-    margin: 50px;
+.btn-desencriptador:hover,
+.btn-encriptador:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+    border-radius: 32px;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+padding: 1%;
+gap: 16px;
+position: absolute;
+width: 100%;
+top: 65%;
+text-align: center;
+}
+
+.mensaje h2 {
+width: 60%;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+text-align: center;
+color: #0a3871;
+
+}
+.mensaje p{
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: aquamarine;
+
+}
+
+.encriptado img{
+    position: absolute;
+    width: 80%;
     height: 50%;
-    width: 50%;
+    top: 15%;
 }
 
+@media(max-width: 57.5em){
+    .div-main{
+        display: flex;
+        flex-direction: row;
+    }
+    .ingresar-Texto{
+        width: 100%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .ojo{
+        width: 80%;
+        left: 10%;
+        top: 67%;        
+    }
+    .ojo p{
+        font-size: 16px;
+    }
+    .boton{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn-encriptador, .btn-desencriptador{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btn-desencriptador:hover, .btn-encriptador:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .encriptado{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje{
+        width: 100%;
+        top: 5%;
+    }
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
