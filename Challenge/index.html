@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="style.css">
     <title>Encriptador de texto</title>
-   
+   <link rel="shortcut" href="" type="image/x-icon">
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
 </head>
 <body>
@@ -14,7 +15,7 @@
                         <textarea name="texto" id="texto-Ingresar" cols="30" class="texto" rows="10" placeholder="Escribe tu texto aquí"></textarea>
                     
                      <div class="ojo">
-                        <p>Utiliza solo letras minúsculas y sin guíones.</p>
+                        <p>Utiliza solo letras minúsculas y sin carácteres especiales.</p>
                     </div>
                     <div class="boton">
                         <button class="btn-encriptador" 
@@ -24,11 +25,11 @@
                  </div>
 
                  <div class="encriptado">
-                    <img src="" alt="" id="im">
-                    <div class="mensaje" id="mensaje'encriptado">
+                    <img src="imagenes/image.png" alt="" id="im">
+                    <div class="mensaje" id="mensaje-encriptado">
                         <h2 id="titulo-mensaje">No se encontró ningún mensaje</h2>
                         <p id="parrafo">Ingresa el texto que quieres encriptar o desencriptar</p>
-                        <textarea name="decifrar" id=" mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                      <!--  <textarea name="decifrar" id=" mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
                     </div>
                  </div>
              </div>

@@ -19,7 +19,7 @@ function encriptar(){
      }
                     else{
                         imag.src = "imagenes/image.png";
-                        alert("Ingresar texto, por favor");
+                       swal( "Algo salió mal", "Ingresar texto, por favor", "warning");
                         titulo.textContent = "No se encontró nada";
                         parra.textContent = "Ingresa lo que quieres encriptar o desencriptar";
         
@@ -48,7 +48,7 @@ function desencriptar(){
 
                     else{
                         imag.src = "imagenes/image.png";
-                        alert("Ingresar texto, por favor");
+                         swal( "Algo salió mal", "Ingresar texto, por favor", "warning");
                         titulo.textContent = "No se encontró nada";
                         parra.textContent = "Ingresa lo que quieres encriptar o desencriptar";
         
