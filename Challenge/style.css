@@ -8,7 +8,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: #f3f5fc;
+    background-color: #EBF4F6;
 }
 
 .texto{
@@ -24,6 +24,7 @@
     font-size: 32px;
 line-height: 150%;
 background-color: #f3f5fc;
+resize: none;
 }
 
 .texto::placeholder
@@ -72,6 +73,7 @@ outline: none;
     width: 80%;
     left: 12%;
     top: 83%;
+    gap: 15px;
 }
 
 .btn-encriptador{
@@ -81,7 +83,8 @@ outline: none;
    padding: 2%;
    gap: 8px;
    width: 25%;
-   background-color: #405cc1;
+   border: 1px solid #ff0000;
+   background-color: #071952;
    border-radius: 24px;
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 18px;
@@ -98,8 +101,8 @@ outline: none;
     justify-content: center;
     padding: 2%;
     gap: 8px;
+    background-color:#071952 ;
     width: 25%;
-    background: #405cc1;
     border: 1px solid #ff0000;
     border-radius: 24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -107,14 +110,35 @@ outline: none;
     font-size: 18px;
     line-height: 19px;
     text-align: center;
-    color: aqua;
+    color: #ffffff;
 }
 
 .btn-desencriptador:hover,
-.btn-encriptador:hover{
+.btn-encriptador:hover, 
+.btn{
     margin: 0.3%;
     width: 24.5%;
     padding: 1.8%;
+}
+
+.btn{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #071952;
+    border: 1px solid #ff0000;
+    border-radius: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .encriptado{
@@ -162,7 +186,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 150%;
 text-align: center;
-color: aquamarine;
+color: #088395;
 
 }
 

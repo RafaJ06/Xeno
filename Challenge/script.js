@@ -5,11 +5,11 @@ function encriptar(){
    let imag = document.getElementById("im");
 
     let tx_Cifrado = tx
-                    .replace(/a/gi, "jj")
-                    .replace(/e/gi, "enter")
-                    .replace(/i/gi, "enter")
-                    .replace(/o/gi, "kk")
-                    .replace(/u/gi, "enter");
+                    .replace(/a/g, "ai")
+                    .replace(/e/g, "enter")
+                    .replace(/i/g, "imes")
+                    .replace(/o/g, "ober")
+                    .replace(/u/g, "ufat");
 
  if(tx.length !=0){
      document.getElementById("texto-Ingresar").value = tx_Cifrado;
@@ -24,6 +24,7 @@ function encriptar(){
                         parra.textContent = "Ingresa lo que quieres encriptar o desencriptar";
         
                     }
+                    
                 }
 
 function desencriptar(){                    
@@ -33,17 +34,18 @@ function desencriptar(){
        let imag = document.getElementById("im");
 
                     let tx_Cifrado = tx
-                    .replace(/jj/gi, "a")
-                    .replace(/enter/gi, "e")
-                    .replace(/enter/gi, "i")
-                    .replace(/kk/gi, "o")
-                    .replace(/enter/gi, "u");
+                    .replace(/ai/g, "a")
+                    .replace(/enter/g, "e")
+                    .replace(/imes/g, "i")
+                    .replace(/ober/g, "o")
+                    .replace(/ufat/g, "u");
 
                     if(tx.length !=0){
                         document.getElementById("texto-Ingresar").value = tx_Cifrado;
                         titulo.textContent = "Texto desencriptado";
                         parra.textContent = "";
-                        imag.src = "imagenes/image.png"
+                        imag.src = "imagenes/image.png";
+                        copy()
                     }
 
                     else{
@@ -53,4 +55,16 @@ function desencriptar(){
                         parra.textContent = "Ingresa lo que quieres encriptar o desencriptar";
         
                     }
+                    
+                }
+
+                function copiarAlPortapapeles() {
+
+                    let texto = document.getElementById("texto-Ingresar").value;
+                    navigator.clipboard.writeText(texto).then(() => {
+                        console.log('Texto copiado al portapapeles!');
+                        alert('Texto copiado al portapapeles!');
+                    }).catch(err => {
+                        console.error('Error al copiar el texto: ', err);
+                    });
                 }
