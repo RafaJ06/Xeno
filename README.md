@@ -10,7 +10,7 @@ Get started with Xeno Executor in just a few simple steps:
 
 **Keywords:** Roblox executor, script execution tool, modding software, gaming utilities, script engine, performance optimization, advanced scripting 2024.
 
-![Xeno Executor Preview](/assets/Xeno.gif)
+![Xeno Executor Preview](/assets/Xeno.webp)
 
 ## Table of Contents
 - [Introduction](#introduction)
